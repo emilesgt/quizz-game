@@ -1,0 +1,117 @@
+/* Styles for the question and answer options */
+/* Quiz container styling */
+.quiz-container {
+    background-color: white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Other quiz styles remain the same */
+
+
+.titre {
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 40px;  
+}
+
+/* text in the questions */
+.question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* text/style in the answer boxes */
+.options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    background-color: #e6e6e6;
+    color: white;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* hover effect */
+.option:hover {
+    background-color: #ccc;
+    color: white;
+}
+
+/* When the answer is correct */
+.correct {
+    background-color: #00FF00;
+    color: #fff;
+}
+
+/* When the answer is incorrect */
+.incorrect {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+/* The button to submit the answer */
+.submit-btn {
+    background-color: #0000ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Disabled state for button */
+.submit-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 95%;
+    }
+
+    .question {
+        font-size: 1.2rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+body {
+    font-family: roboto;
+    font-style: italic;
+    font-weight: bold;
+    
+    background-image: url('JS.gif');
+    background-color: black;
+    background-size: contain;        /* Makes the image only as large as needed */
+    background-repeat: no-repeat;    /* No tiling */
+    background-position: center top; /* Position it at the top center */
+    background-attachment: fixed;    /* No scrolling on the background */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
